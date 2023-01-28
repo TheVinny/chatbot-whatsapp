@@ -3,83 +3,31 @@
 Depencencias utilizadas:
 
 - Node.js;
-- Express;
-- Typescript;
-- ESLint;
-- Prettier;
-- Celebrate;
-- Multer;
-- TypeORM;
-- Docker;
-
-Para rodar o projeto, execute o script docker-compose up para subir os containers:
+- Whatsapp web js;
+- Qrcode-terminal;
+- Dotenv;
 
 Execute o comando abaixo para copiar o .env.example
 
 Coping variable file:
 
-    git clone https://github.com/TheVinny/innovation-test.git && cd innovation-test
+    git clone https://github.com/TheVinny/chatbot-whatsapp && cd chatbot-whatsapp
     cp .env.example .env
 
-Edite o arquivo ormconfig.json conforme as necessidades
+Edite o arquivo .env inserindo o seu número de telefone na variável
+
+Obs: esse número será utilizado para receber a mensagem referente a conexão do bot
+
+Para rodar o projeto, execute o script npm run dev:
+
+após rodar o script, leia o qrcode atráves da seção 'aparelhos conectados' no whatsapp a ser automatizado.
+
+### Comandos
 
 ```
- docker-compose up
+!sticker - converte a imagem em uma figurinha
 ```
 
-## Endpoints
-
-- Create Product | POST - `/products`:
-
 ```
-{
-  "name": "Examples" - required & string ,
-  "quantity": 20  - required & Number,
-  "status": "Inactive" - required & enum('Inactive' && 'Active'),
-  "category": "Eletronics - required & String"
-}
-```
-
-- Update Product | PUT - `/products/:id - required | uuid`:
-
-```
-{
-  "name": "Examples" - Opcional & string ,
-  "quantity": 20  -  Opcional & Number,
-  "status": "Inactive" - Opcional & enum('Inactive' && 'Active'),
-  "category": "Eletronics - Opcional & String"
-}
-
-```
-
-- Get Products | GET - `/products`:
-
-```
-{
-  No Body
-}
-```
-
-- Get Products | GET - `/products/id - required | uuid`:
-
-```
-{
-  No Body
-}
-```
-
-- Delete Products | Delete - `/products/id - required | uuid`:
-
-```
-{
-  No Body
-}
-```
-
-- Delete Ibge | GET - `/ibge - required | uuid`:
-
-```
-{
-  No Body
-}
+!dog - retorna uma imagem aleatória de um doguinho
 ```
