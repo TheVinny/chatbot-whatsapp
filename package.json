@@ -1,0 +1,45 @@
+{
+  "name": "innovation-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register -r tsconfig-paths/register ./src/__test__/**/*$NAME*.{test,spec}.ts -t 20000 --exit",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/App.ts",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheVinny/innovation-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheVinny/innovation-test/issues"
+  },
+  "homepage": "https://github.com/TheVinny/innovation-test#readme",
+  "devDependencies": {
+    "@types/mime": "^3.0.1",
+    "@types/qrcode-terminal": "^0.12.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "prettier": "^2.8.2",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.1.2",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "axios": "^1.2.5",
+    "dotenv": "^16.0.3",
+    "mime": "^3.0.0",
+    "mimetype": "^0.0.8",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.19.2"
+  }
+}
